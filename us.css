@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #000000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/b1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #f1ca1d;
+    font-family: "Sekuya", system-ui;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #f1ecdc;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ecae32;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-txt h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ecae32;
+    margin-bottom: 20px;
+    font-family: "Sekuya", system-ui;
+}
+
+.header-txt p {
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    line-height: 1.5;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.btn-1,
+.btn-2 {
+
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #f1ca1d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: "Oswald", sans-serif;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background-color: #d4a017;
+    transform: translateY(-2px);
+}
+
+span {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Sekuya", system-ui;
+}
+
+h2 {
+    color: #ecae32;
+    font-size: 70px;
+    font-family: "Oswald", sans-serif;
+    line-height: 70px;
+    margin-bottom: 35px;
+}
+
+.banner {
+    width: 100%;
+    min-height: 500px;
+    padding: 100px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ),
+    url(images/wp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reseñas {
+    width: 100%;
+    padding: 90px 0;
+    background: #111;
+}
+
+.reseñas-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.reseñas h2 {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.reseñas-subtitulo {
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.reseña-card {
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    text-align: left;
+
+    transition: 0.3s ease;
+}
+
+.reseña-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #d4a017, #7a480b);
+
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cliente h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cliente span {
+    color: #ffd700;
+    font-size: 16px;
+}
+
+.reseña-card p {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.footer {
+    padding: 250px 0 50px 0;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    display: block;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: #fff9ed;
+}
+
+.footer-content a:hover{
+    color: #d4a017;
+}
+
+
+@media (max-width: 991px){
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+        text-align: center;
+    }
+
+    .menu .navbar ul {
+        width: 100%;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        float: none;
+    }
+
+    .menu .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+
+    .header {
+        min-height: 0;
+    }
+
+    .header-content {
+        width: 100%;
+        padding: 140px 30px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-txt {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 55px;
+        line-height: 1.1;
+    }
+
+    .header-txt p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .btn-1,
+    .btn-2 {
+        margin: 5px;
+    }
+
+    .banner {
+        padding: 60px 30px;
+    }
+
+
+    .reseñas {
+        padding: 60px 0;
+    }
+
+    .reseñas h2 {
+        font-size: 32px;
+    }
+
+    .reseñas-subtitulo {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .reseñas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .reseña-card {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .cliente {
+        margin-bottom: 18px;
+    }
+
+    .reseña-card p {
+        font-size: 15px;
+    }
+
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content a {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+

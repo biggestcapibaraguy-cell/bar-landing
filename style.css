@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #000000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/1A.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #f1ca1d;
+    font-family: "Sekuya", system-ui;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #f1ecdc;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ecae32;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.icons i {
+    transition: color 0.3s ease;
+}
+
+.icons i:hover {
+    color: #ecae32;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+.carrusel {
+    width: 50%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrusel.swiper {
+    width: 50%;
+    height: 350px;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    opacity: 0.55;
+    transform: scale(0.82);
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.swiper-slide h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Sekuya", system-ui;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px #000000;
+    z-index: 3;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FFFFFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.45);
+    transition: 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: #f1ca1d;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ecae32;
+    margin-bottom: 20px;
+    font-family: "Sekuya", system-ui;
+}
+
+.header-txt p {
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    line-height: 1.5;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.btn-1,
+.btn-2 {
+
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #f1ca1d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: "Oswald", sans-serif;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background-color: #d4a017;
+    transform: translateY(-2px);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ecae32;
+}
+
+.price-1 {
+    height: 100px;
+    width: 300px;
+    border-right: 1px solid #ecae32;
+    padding: 20px;
+}
+
+.price-1:last-child {
+    border: 0;
+}
+
+.price-1 p {
+    color: #FFFFFF;
+    font-size: 21px;
+    font-family: "Oswald", sans-serif;
+}
+
+.price-1 h3 {
+    color: #ecae32;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+}
+
+span {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Sekuya", system-ui;
+}
+
+h2 {
+    color: #ecae32;
+    font-size: 70px;
+    font-family: "Oswald", sans-serif;
+    line-height: 70px;
+    margin-bottom: 35px;
+}
+
+.adventure {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.adventur-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.adventur-1 {
+    flex: 1;
+    height: 400px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.adventur-1 img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin: -120px 0 30px 0;
+}
+
+.adventur-1 h3 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    line-height: 45px;
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+
+.bg-1 {
+    background-image: url(images/1A.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+}
+
+.bg-2 {
+    background-image: url(images/2a.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+}
+
+.bg-3 {
+    background-image: url(images/4a.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 400px;
+}
+
+.btn-1:hover{
+    background-color: #d4a017;
+}
+
+.btn-1:hover{
+    background-color: #d4a017;
+}
+
+.general{
+    padding: 100px 0;
+    display: flex;
+}
+
+.general-img{
+    width: 40%;
+    text-align: center;
+}
+
+.general-img img{
+    width: 400px;
+}
+
+.general-txt{
+    width: 50%;
+}
+
+.general-txt p{
+    font-size: 18px;
+    color: #fff9ed;
+    margin-bottom: 50px;
+    font-family: "Oswald", sans-serif;
+}
+
+.banner {
+    width: 100%;
+    min-height: 500px;
+    padding: 100px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ),
+    url(images/wp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plan-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.plan-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.plan-1 {
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+}
+
+.plan-1 img {
+    width: 40px;
+    margin: 40px auto 25px;
+}
+
+.plan-1 h3 {
+    color: #fff9ed;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.plan-1 p {
+    font-size: 18px;
+    color: #fff9ed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer {
+    padding: 250px 0 50px 0;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),
+    url(images/moon.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    display: block;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: #fff9ed;
+}
+
+.footer-content a:hover{
+    color: #fedab6;
+}
+
+
+
+@media (max-width: 991px) {
+     .menu .navbar ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .carrusel.swiper {
+        width: 50%;
+        height: 300px;
+    }
+
+    .swiper-slide {
+        height: 240px;
+    }
+
+    .header-txt h1 {
+        font-size: 45px;
+    }
+
+    .header-txt p {
+        font-size: 18px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-txt h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .price-1 {
+        height: 80px;
+        width: 100%;
+    }
+
+    .price-1 p {
+        font-size: 15px;
+    }
+
+    .price-1 h3 {
+        font-size: 15px;
+    }
+
+    .adventure {
+        padding: 30px;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    .adventur-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .adventur-1 {
+        width: 70%;
+        margin-bottom: 130px;
+    }
+
+    .adventur-1:last-child {
+        margin-bottom: 0;
+    }
+
+    .general {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .general-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .general-img img {
+        width: 100%;
+    }
+
+    .general-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .general-txt p {
+        margin-bottom: 25px;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .plan-container {
+        padding: 30px;
+    }
+
+    .plan-content {
+        flex-direction: column;
+    }
+
+    .plan-1 {
+        padding: 25px 100px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content a {
+        margin-bottom: 40px;
+    }
+}
+    
+
+
+@media (max-width: 767px) {
+    .header {
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+ 
+    .menu {
+        padding: 20px 0;
+    }
+
+    .menu label {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 15px 0;
+        border-radius: 10px;
+        z-index: 200;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+    .menu .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 120px;
+        text-align: center;
+    }
+    
+    .carrusel.swiper {
+        width: 100%;
+        height: 280px;
+    }
+
+    .swiper-slide {
+        height: 230px;
+        transform: scale(0.9);
+    }
+
+    .swiper-slide-active {
+        transform: scale(1);
+    }
+
+    .header-txt {
+        width: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .header-txt p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .btn-1,
+    .btn-2 {
+        margin-bottom: 10px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 16px;
+    }
+        
+
+
+}
